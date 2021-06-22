@@ -1,12 +1,18 @@
+variable "name" {
+  description = "Name of the security group."
+}
+
+variable "description" {
+  description = "Security group description."
+}
+
 variable "vpc_id" {
-  description = "The VPC ID."
+  description = "VPC ID."
 }
-
-variable "cidr_block" {
-  description = "The CIDR block for the subnet."
+variable "ingress" {
+  description = "The AZ for the subnet."
 }
-
-variable "availability_zone" {
+variable "egress" {
   description = "The AZ for the subnet."
 }
 
