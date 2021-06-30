@@ -1,9 +1,13 @@
-variable "vpc_id" {
-  description = "The VPC ID."
+variable "subnet_id" {
+  description = "The Subnet ID of the subnet in which to place the gateway."
 }
 
-variable "route" {
-  description = "A list of route objects. Their keys are documented below. This argument is processed in attribute-as-blocks mode."
+variable "allocation_id" {
+  description = "The Allocation ID of the Elastic IP address for the gateway."
+}
+
+variable "connectivity_type" {
+  description = "Connectivity type for the gateway. Valid values are private and public."
 }
 
 variable "tags" {
