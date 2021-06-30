@@ -6,3 +6,12 @@ resource "eksctl_cluster" "eksctl_cluster" {
   tags = var.tags
   spec = var.spec
 }
+
+terraform {
+  required_providers {
+    eksctl = {
+      source = "mumoshu/eksctl"
+      version = "->0.16.0"
+    }
+  }
+}
