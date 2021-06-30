@@ -6,9 +6,9 @@ variable "allocation_id" {
   description = "The Allocation ID of the Elastic IP address for the gateway."
 }
 
-variable "connectivity_type" {
-  description = "Connectivity type for the gateway. Valid values are private and public."
-}
+# variable "connectivity_type" {
+#   description = "Connectivity type for the gateway. Valid values are private and public."
+# }
 
 variable "tags" {
   description = "A map of tags to assign to the resource."
