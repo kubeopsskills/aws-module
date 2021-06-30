@@ -13,7 +13,7 @@ variable "region" {
     description = "Kubernetes Cluster Region"
 }
 
-variable "version" {
+variable "k8s_version" {
     type = string
     description = "Kubernetes Cluster Version"
 }
