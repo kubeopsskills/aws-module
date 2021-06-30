@@ -3,6 +3,11 @@ variable "api_version" {
     description = "EKSCTL API version"
 }
 
+variable "vpc_id" {
+    type = string
+    description = "VPC ID"
+}
+
 variable "name" {
     type = string
     description = "Kubernetes Cluster Name"
