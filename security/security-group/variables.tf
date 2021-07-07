@@ -16,8 +16,8 @@ variable "ingresses" {
   description = "Ingress Rules"
   type = list(object({
     description = string,
-    from_port = string,
-    to_port = string,
+    from_port = number,
+    to_port = number,
     protocol = string,
     security_groups = list(string),
     cidr_blocks = list(string),
@@ -28,8 +28,8 @@ variable "egresses" {
   description = "Egress Rules"
   type = list(object({
     description = string,
-    from_port = string,
-    to_port = string,
+    from_port = number,
+    to_port = number,
     protocol = string,
     security_groups = list(string),
     cidr_blocks = list(string),
