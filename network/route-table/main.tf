@@ -13,6 +13,10 @@ resource "aws_route_table" "route_table" {
       nat_gateway_id = route.value.nat_gateway_id
     }
   }
-  
+
   tags = var.tags
+}
+resource "aws_route_table_association" "route_table_association" {
+  subnet_id      = var.subnet_id
+  route_table_id = aws_route_table.route_table.id
 }
