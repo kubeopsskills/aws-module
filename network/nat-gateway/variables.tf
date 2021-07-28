@@ -12,5 +12,5 @@ variable "allocation_id" {
 
 variable "tags" {
   description = "A map of tags to assign to the resource."
-  type = map(string)
+  type        = map(string)
 }

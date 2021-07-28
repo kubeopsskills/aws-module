@@ -1,4 +1,4 @@
 resource "aws_eip" "eip" {
-  tags     = var.tags
+  tags = var.tags
 }
 
