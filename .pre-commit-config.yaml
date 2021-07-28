@@ -7,10 +7,12 @@ repos:
       exclude: \.terraform\/.*$
   
     - id: terraform_fmt
-      files: (\.hcl)$
+      files: (\.tf|\.tfvars)$
       exclude: \.terraform\/.*$
 
     - id: terraform_tfsec
+      files: (\.tf|\.tfvars)$
+      exclude: \.terraform\/.*$
 
     - id: terraform_docs
     - id: terraform_docs_replace
