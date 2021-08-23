@@ -32,3 +32,9 @@ variable "spec" {
   type        = string
   description = "EKSCTL Spec"
 }
+
+variable "eksctl_bin" {
+  type        = string
+  description = "eksctl binary"
+  default = "/usr/local/bin/eksctl"
+}

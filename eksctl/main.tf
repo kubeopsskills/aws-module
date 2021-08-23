@@ -6,6 +6,7 @@ resource "eksctl_cluster" "eksctl_cluster" {
   version     = var.k8s_version
   tags        = var.tags
   spec        = var.spec
+  eksctl_bin  = var.eksctl_bin
 }
 
 terraform {
