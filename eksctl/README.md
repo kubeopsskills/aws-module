@@ -29,7 +29,7 @@ No modules.
 | <a name="input_k8s_version"></a> [k8s\_version](#input\_k8s\_version) | Kubernetes Cluster Version | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | Kubernetes Cluster Name | `string` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | Kubernetes Cluster Region | `string` | n/a | yes |
-| <a name="input_resource_depends_on"></a> [resource\_depends\_on](#input\_resource\_depends\_on) | Resource Dependencies | `string` | n/a | yes |
+| <a name="input_resource_depends_on"></a> [resource\_depends\_on](#input\_resource\_depends\_on) | Resource Dependencies | `any` | n/a | yes |
 | <a name="input_spec"></a> [spec](#input\_spec) | EKSCTL Spec | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | List of tags | `map(string)` | n/a | yes |
 | <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | VPC ID | `string` | n/a | yes |

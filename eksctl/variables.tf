@@ -40,6 +40,6 @@ variable "eksctl_bin" {
 }
 
 variable "resource_depends_on" {
-  type        = string
+  type        = any
   description = "Resource Dependencies"
 }
