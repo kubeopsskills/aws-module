@@ -7,6 +7,7 @@ resource "eksctl_cluster" "eksctl_cluster" {
   tags        = var.tags
   spec        = var.spec
   eksctl_bin  = var.eksctl_bin
+  depends_on  = [var.resource_depends_on]
 }
 
 terraform {

@@ -36,5 +36,10 @@ variable "spec" {
 variable "eksctl_bin" {
   type        = string
   description = "eksctl binary"
-  default = "/usr/local/bin/eksctl"
+  default     = "/usr/local/bin/eksctl"
+}
+
+variable "resource_depends_on" {
+  type        = string
+  description = "Resource Dependencies"
 }
