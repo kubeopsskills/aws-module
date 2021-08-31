@@ -39,6 +39,12 @@ variable "eksctl_bin" {
   default     = "/usr/local/bin/eksctl"
 }
 
+variable "kubeconfig_path" {
+  type        = string
+  description = "Path to kubeconfig"
+  default     = ""
+}
+
 variable "resource_depends_on" {
   type        = any
   description = "Resource Dependencies"
