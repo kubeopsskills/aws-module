@@ -1,3 +1,10 @@
+# Settings
+variable "enabled_role" {
+  type        = bool
+  description = "Enabled role"
+  default     = true
+}
+
 # Role
 variable "account_id" {
   type        = string
