@@ -28,17 +28,17 @@ No requirements.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_account_id"></a> [account\_id](#input\_account\_id) | The AWS Account ID | `string` | n/a | yes |
-| <a name="input_additional_policy"></a> [additional\_policy](#input\_additional\_policy) | Additional Policy | `string` | n/a | yes |
-| <a name="input_additional_policy_description"></a> [additional\_policy\_description](#input\_additional\_policy\_description) | (Optional, Forces new resource) Description of the IAM policy. | `string` | n/a | yes |
-| <a name="input_additional_policy_name"></a> [additional\_policy\_name](#input\_additional\_policy\_name) | Secret Manager ARN ID | `string` | n/a | yes |
+| <a name="input_additional_policy"></a> [additional\_policy](#input\_additional\_policy) | (Required if enabled) Additional Policy | `string` | `null` | no |
+| <a name="input_additional_policy_description"></a> [additional\_policy\_description](#input\_additional\_policy\_description) | (Optional) Description of the IAM policy. | `string` | `null` | no |
+| <a name="input_additional_policy_name"></a> [additional\_policy\_name](#input\_additional\_policy\_name) | (Optional) The name of the additional policy. | `string` | `null` | no |
 | <a name="input_cluster_oidc_issuer_url"></a> [cluster\_oidc\_issuer\_url](#input\_cluster\_oidc\_issuer\_url) | The URL of the cluster's OIDC issuer | `string` | n/a | yes |
-| <a name="input_enabled_additional_policy"></a> [enabled\_additional\_policy](#input\_enabled\_additional\_policy) | Enabled Additional Policy | `bool` | `false` | no |
+| <a name="input_enabled_additional_policy"></a> [enabled\_additional\_policy](#input\_enabled\_additional\_policy) | (Optional) Enabled Additional Policy | `bool` | `false` | no |
 | <a name="input_enabled_role"></a> [enabled\_role](#input\_enabled\_role) | Enabled role | `bool` | `true` | no |
 | <a name="input_kms_arn_id"></a> [kms\_arn\_id](#input\_kms\_arn\_id) | KMS ARN ID | `string` | n/a | yes |
 | <a name="input_labels"></a> [labels](#input\_labels) | A list of labels to apply to the service account | `map(string)` | `{}` | no |
 | <a name="input_namespace"></a> [namespace](#input\_namespace) | The namespace to create the service account in | `string` | n/a | yes |
 | <a name="input_policy_description"></a> [policy\_description](#input\_policy\_description) | (Optional, Forces new resource) Description of the IAM policy. | `string` | n/a | yes |
-| <a name="input_policy_name"></a> [policy\_name](#input\_policy\_name) | The name of the policy. If omitted, Terraform will assign a random, unique name. | `string` | `true` | no |
+| <a name="input_policy_name"></a> [policy\_name](#input\_policy\_name) | The name of the policy. | `string` | `true` | no |
 | <a name="input_role_name"></a> [role\_name](#input\_role\_name) | The name of the role to create | `string` | n/a | yes |
 | <a name="input_secret_manager_arn_id"></a> [secret\_manager\_arn\_id](#input\_secret\_manager\_arn\_id) | Secret Manager ARN ID | `string` | n/a | yes |
 | <a name="input_service_account_name"></a> [service\_account\_name](#input\_service\_account\_name) | The name of the service account to create | `string` | n/a | yes |

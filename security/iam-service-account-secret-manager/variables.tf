@@ -1,7 +1,7 @@
 # Policy
 variable "policy_name" {
   type        = string
-  description = "The name of the policy. If omitted, Terraform will assign a random, unique name."
+  description = "The name of the policy."
   default     = true
 }
 
@@ -23,23 +23,26 @@ variable "secret_manager_arn_id" {
 # Additional Policy
 variable "additional_policy_name" {
   type        = string
-  description = "Secret Manager ARN ID"
+  description = "(Optional) The name of the additional policy."
+  default     = null
 }
 
 variable "additional_policy_description" {
   type        = string
-  description = "(Optional, Forces new resource) Description of the IAM policy."
+  description = "(Optional) Description of the IAM policy."
+  default     = null
 }
 
 variable "enabled_additional_policy" {
   type        = bool
-  description = "Enabled Additional Policy"
+  description = "(Optional) Enabled Additional Policy"
   default     = false
 }
 
 variable "additional_policy" {
   type        = string
-  description = "Additional Policy"
+  description = "(Required if enabled) Additional Policy"
+  default     = null
 }
 
 # Role
