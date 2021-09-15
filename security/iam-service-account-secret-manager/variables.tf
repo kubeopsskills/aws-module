@@ -40,7 +40,7 @@ variable "enabled_additional_policy" {
 }
 
 variable "additional_policy" {
-  type        = any
+  type        = string
   description = "(Required if enabled) Additional Policy"
   default     = null
 }

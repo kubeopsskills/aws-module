@@ -28,7 +28,7 @@ No requirements.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_account_id"></a> [account\_id](#input\_account\_id) | The AWS Account ID | `string` | n/a | yes |
-| <a name="input_additional_policy"></a> [additional\_policy](#input\_additional\_policy) | (Required if enabled) Additional Policy | `any` | `null` | no |
+| <a name="input_additional_policy"></a> [additional\_policy](#input\_additional\_policy) | (Required if enabled) Additional Policy | `string` | `null` | no |
 | <a name="input_additional_policy_description"></a> [additional\_policy\_description](#input\_additional\_policy\_description) | (Optional) Description of the IAM policy. | `string` | `null` | no |
 | <a name="input_additional_policy_name"></a> [additional\_policy\_name](#input\_additional\_policy\_name) | (Optional) The name of the additional policy. | `string` | `null` | no |
 | <a name="input_cluster_oidc_issuer_url"></a> [cluster\_oidc\_issuer\_url](#input\_cluster\_oidc\_issuer\_url) | The URL of the cluster's OIDC issuer | `string` | n/a | yes |
