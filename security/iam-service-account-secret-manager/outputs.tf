@@ -6,7 +6,7 @@ output "iam_secret_manager_policy_arn" {
 
 output "iam_additional_policy_arn" {
   description = "IAM Additional Policy"
-  value       = aws_iam_policy.additional_policy[0].arn
+  value       = length(aws_iam_policy.additional_policy) > 0 ? aws_iam_policy.additional_policy[0].arn : "No Additional Policy"
 }
 
 # Role
