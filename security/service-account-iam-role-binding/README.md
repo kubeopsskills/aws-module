@@ -22,7 +22,9 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_service_accounts"></a> [service\_accounts](#input\_service\_accounts) | Service Accounts | <pre>list(object({<br>    service_account_name = string<br>    namespace            = string<br>    account_id           = string<br>    role_name            = string<br>    labels               = map(string)<br>  }))</pre> | n/a | yes |
+| <a name="input_account_id"></a> [account\_id](#input\_account\_id) | AWS Account ID | `string` | n/a | yes |
+| <a name="input_role_name"></a> [role\_name](#input\_role\_name) | Name of the role | `string` | n/a | yes |
+| <a name="input_service_accounts"></a> [service\_accounts](#input\_service\_accounts) | Service Accounts | <pre>list(object({<br>    service_account_name = string<br>    namespace            = string<br>    labels               = map(string)<br>  }))</pre> | n/a | yes |
 
 ## Outputs
 

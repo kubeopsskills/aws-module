@@ -1,10 +1,18 @@
+variable "account_id" {
+  description = "AWS Account ID"
+  type        = string
+}
+
+variable "role_name" {
+  description = "Name of the role"
+  type        = string
+}
+
 variable "service_accounts" {
   description = "Service Accounts"
   type = list(object({
     service_account_name = string
     namespace            = string
-    account_id           = string
-    role_name            = string
     labels               = map(string)
   }))
 }
